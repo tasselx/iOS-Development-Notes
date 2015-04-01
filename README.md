@@ -12,4 +12,4 @@ iOS Development Notes
 
 1. Enable Foundation Assertions 设置YES
 2. Preprocessor Macros 设置编译条件 beta,pro
-![mutableTarget](./images/mutableTarget.png)
+![mutableTarget](./images/MutableTarget.png)
