@@ -16,4 +16,7 @@ iOS Development Notes
 ![mutableTarget](./images/MutableTarget.png)
 
 ##隐藏部分TableViewCell分割线
+
+![hideSperatot](./images/HideSperatorline.png)
+
 [Demo](https://github.com/tasselx/iOS-Development-Notes/tree/master/Projects/HideSperatorLine)
