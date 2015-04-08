@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="npn-RW-k9J">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xGN-AI-wiL">
+            <objects>
+                <navigationController id="npn-RW-k9J" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vou-2h-Zof">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wbx-oF-mGS" kind="relationship" relationship="rootViewController" id="NVv-ve-6GZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzV-Lb-xDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="413"/>
+        </scene>
+        <!--隐藏Cell分割线-->
+        <scene sceneID="FaH-1E-P6f">
+            <objects>
+                <viewController id="Wbx-oF-mGS" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5t9-UJ-PJW"/>
+                        <viewControllerLayoutGuide type="bottom" id="gxH-79-O1W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tDA-rP-Bid">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="In9-Tr-aHh">
+                                <rect key="frame" x="0.0" y="29" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wbx-oF-mGS" id="Vy5-zZ-oHm"/>
+                                    <outlet property="delegate" destination="Wbx-oF-mGS" id="Tnr-pn-tC3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="In9-Tr-aHh" secondAttribute="bottom" constant="-29" id="A9R-mU-ttO"/>
+                            <constraint firstItem="In9-Tr-aHh" firstAttribute="top" secondItem="tDA-rP-Bid" secondAttribute="topMargin" constant="29" id="FSl-4q-b6b"/>
+                            <constraint firstItem="In9-Tr-aHh" firstAttribute="leading" secondItem="tDA-rP-Bid" secondAttribute="leading" id="IQv-xa-WfV"/>
+                            <constraint firstAttribute="trailing" secondItem="In9-Tr-aHh" secondAttribute="trailing" id="rJJ-cr-OPN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="隐藏Cell分割线" id="HeT-KO-va0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0N-h2-b9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="389"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
